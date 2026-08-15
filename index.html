@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boris Rayskiy — Portfolio</title>
+  <meta name="description" content="Portfolio of Boris Rayskiy — Android apps, open-source projects, and engineering work." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Boris Rayskiy — Portfolio" />
+  <meta property="og:description" content="Android apps, open-source projects, and engineering work." />
+  <meta property="og:url" content="https://www.rayskiy.com/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="brand">BR</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#opensource">Open Source</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" aria-label="Toggle color theme">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">Hi, my name is</p>
+        <h1>Boris Rayskiy.</h1>
+        <h2 class="hero-subtitle">I build software people rely on.</h2>
+        <p class="hero-bio">
+          Software engineer and independent Android developer. I've shipped games and
+          utilities on Google Play with <strong>millions of downloads</strong>, and I build
+          open-source tools spanning language runtimes, LLMs, and C++ libraries.
+        </p>
+        <ul class="hero-stats">
+          <li><strong>~8M+</strong><span>downloads</span></li>
+          <li><strong>40K+</strong><span>ratings</span></li>
+          <li><strong>Since 2012</strong><span>on Google Play</span></li>
+        </ul>
+        <div class="hero-cta">
+          <a href="#apps" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section container">
+      <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a software engineer who has been publishing on the Google Play Store since
+            2012. My apps — from the <strong>GameWeave</strong> gaming platform to card games
+            like <strong>Preferans</strong> and <strong>Omaha Hi/Lo Poker</strong> — have
+            collectively earned millions of downloads and tens of thousands of ratings.
+          </p>
+          <p>
+            Beyond the app store, I enjoy building things from first principles: a
+            minimalist LLM written from scratch in Kotlin, a scientific plotting library in
+            C++, and my own YACC-based scripting language. I care about clean design,
+            performance, and understanding systems all the way down.
+          </p>
+          <p>Technologies I work with:</p>
+          <ul class="skills">
+            <li>Android / Kotlin</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Compilers / YACC</li>
+          </ul>
+        </div>
+        <div class="about-photo">
+          <div class="photo-placeholder">Photo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Google Play Apps ===== -->
+    <section id="apps" class="section container">
+      <h2 class="section-title"><span class="section-num">02.</span> Google Play Apps</h2>
+      <div class="cards">
+        <article class="card card-featured">
+          <div class="card-icon">🎮</div>
+          <h3>GameWeave</h3>
+          <p>
+            My flagship gaming platform for Android — weaving a collection of games into a
+            single, connected experience.
+          </p>
+          <div class="card-tags">
+            <span>Android</span><span>Kotlin</span><span>Games</span>
+          </div>
+          <!-- TODO: confirm the exact Play Store URL for GameWeave -->
+          <a class="card-link" href="https://play.google.com/store/apps/developer?id=borisgames" target="_blank" rel="noopener">View on Google Play →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🃏</div>
+          <h3>Preferans</h3>
+          <p>
+            A digital version of Preferans (Pref) — the classic intellectual trick-taking
+            card game. Play against smart AI opponents.
+          </p>
+          <div class="card-tags">
+            <span>Android</span><span>Card Game</span>
+          </div>
+          <a class="card-link" href="https://play.google.com/store/apps/details?id=com.rayskiy.preferans" target="_blank" rel="noopener">View on Google Play →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">♠️</div>
+          <h3>Omaha Hi/Lo Poker</h3>
+          <p>
+            Omaha Hi/Lo poker for Android — practice and play one of poker's most strategic
+            split-pot variants.
+          </p>
+          <div class="card-tags">
+            <span>Android</span><span>Poker</span>
+          </div>
+          <a class="card-link" href="https://play.google.com/store/apps/details?id=boris.omaha" target="_blank" rel="noopener">View on Google Play →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🧮</div>
+          <h3>CalcLab</h3>
+          <p>A calculator and computation lab for Android with more power than the built-in.</p>
+          <div class="card-tags">
+            <span>Android</span><span>Utility</span>
+          </div>
+          <a class="card-link" href="https://play.google.com/store/apps/details?id=boris.calclab" target="_blank" rel="noopener">View on Google Play →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📜</div>
+          <h3>JavaScript</h3>
+          <p>Run and experiment with JavaScript directly on your Android device.</p>
+          <div class="card-tags">
+            <span>Android</span><span>Developer Tool</span>
+          </div>
+          <a class="card-link" href="https://play.google.com/store/apps/details?id=boris.javascript" target="_blank" rel="noopener">View on Google Play →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Open Source ===== -->
+    <section id="opensource" class="section container">
+      <h2 class="section-title"><span class="section-num">03.</span> Open Source</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🧠</div>
+          <h3>kortex</h3>
+          <p>A minimalistic LLM (GPT) in Kotlin, built from scratch — for learning the internals of large language models.</p>
+          <div class="card-tags"><span>Kotlin</span><span>LLM</span></div>
+          <a class="card-link" href="https://github.com/brayskiy/kortex" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📈</div>
+          <h3>bplot</h3>
+          <p>Portable C++ scientific plotting library (2D/3D, contours, maps, Hershey fonts) — a modern renewal of a PLplot-descended engine.</p>
+          <div class="card-tags"><span>C++</span><span>Graphics</span></div>
+          <a class="card-link" href="https://github.com/brayskiy/bplot" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⚙️</div>
+          <h3>ooyacc</h3>
+          <p>An object-oriented take on YACC that generates modern C++ classes instead of C code.</p>
+          <div class="card-tags"><span>C++</span><span>Compilers</span></div>
+          <a class="card-link" href="https://github.com/brayskiy/ooyacc" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🐍</div>
+          <h3>boascript</h3>
+          <p>My own scripting language and interpreter, built with a YACC grammar — the engine behind the BoaScript Android app.</p>
+          <div class="card-tags"><span>Yacc</span><span>Language</span></div>
+          <a class="card-link" href="https://github.com/brayskiy/boascript" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+      <p class="section-footnote">
+        More on <a href="https://github.com/brayskiy?tab=repositories" target="_blank" rel="noopener">github.com/brayskiy</a>,
+        including contributions to open-source projects like
+        <a href="https://github.com/brayskiy/restbed" target="_blank" rel="noopener">Restbed</a> (async C++ REST framework) and
+        <a href="https://github.com/brayskiy/Android-WYSIWYG-Editor" target="_blank" rel="noopener">Android-WYSIWYG-Editor</a>.
+      </p>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section container">
+      <h2 class="section-title"><span class="section-num">04.</span> Experience &amp; Contributions</h2>
+      <div class="timeline">
+        <!-- TODO: duplicate per role -->
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">20XX – 20XX</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Role Title <span class="at">@ Company</span></h3>
+            <ul>
+              <li>What you built or contributed.</li>
+              <li>Impact and technologies used.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section container section-contact">
+      <p class="eyebrow">05. What's Next?</p>
+      <h2 class="contact-title">Get In Touch</h2>
+      <p class="contact-text">
+        I'm always open to interesting projects and conversations.
+        The best way to reach me is by email.
+      </p>
+      <a class="btn btn-primary" href="mailto:brayskiy@gmail.com">Say Hello</a>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <ul class="social">
+      <li><a href="https://github.com/brayskiy" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+      <li><a href="https://play.google.com/store/apps/developer?id=borisgames" target="_blank" rel="noopener" aria-label="Google Play">Google Play</a></li>
+      <li><a href="mailto:brayskiy@gmail.com" aria-label="Email">Email</a></li>
+      <!-- TODO: add your LinkedIn URL here -->
+    </ul>
+    <p class="footer-note">© <span id="year"></span> Boris Rayskiy · Built with plain HTML/CSS/JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
