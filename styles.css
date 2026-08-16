@@ -137,6 +137,21 @@ a { color: var(--accent); text-decoration: none; }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
 .card-featured { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), var(--shadow); }
 .section-footnote { margin-top: 32px; color: var(--text-muted); font-size: 0.95rem; }
+.section-footnote code { font-family: var(--mono); font-size: 0.85em; background: var(--accent-soft); color: var(--accent); padding: 2px 6px; border-radius: 5px; }
+
+/* ===== Subsection heading (Apps groups) ===== */
+.subsection-title { font-family: var(--mono); font-size: 1rem; color: var(--accent); margin-bottom: 24px; }
+.subsection-title + .cards { margin-bottom: 8px; }
+.cards + .subsection-title { margin-top: 56px; }
+
+/* ===== Company label + delisted note on app cards ===== */
+.card-company { font-family: var(--mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+.card-note { font-family: var(--mono); font-size: 0.8rem; color: var(--text-muted); font-style: italic; }
+
+/* ===== Experience extra lines ===== */
+.exp-tech { font-family: var(--mono); font-size: 0.8rem; color: var(--text-muted); margin-top: 12px; }
+.exp-ship { font-size: 0.85rem; color: var(--text-muted); margin-top: 12px; }
+.about-edu { font-size: 0.95rem; }
 .card-icon { font-size: 2rem; margin-bottom: 16px; }
 .card h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .card p { color: var(--text-muted); font-size: 0.95rem; flex-grow: 1; }
@@ -159,6 +174,7 @@ a { color: var(--accent); text-decoration: none; }
 .section-contact { text-align: center; max-width: 640px; }
 .contact-title { font-size: clamp(2rem, 6vw, 3rem); margin: 12px 0 20px; }
 .contact-text { color: var(--text-muted); margin-bottom: 40px; }
+.contact-cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
 /* ===== Footer ===== */
 .site-footer { text-align: center; padding: 48px 24px; border-top: 1px solid var(--border); }
